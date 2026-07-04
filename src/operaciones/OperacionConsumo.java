@@ -21,6 +21,6 @@ public class OperacionConsumo implements Operacion {
 
     @Override
     public void deshacer() {
-        bateria.cargar(kwh); // El opuesto de consumir es cargar
+        bateria.cargar(kwh);
     }
 }

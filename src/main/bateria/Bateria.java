@@ -23,7 +23,7 @@ public class Bateria {
     }
 
     public void consumir(double kwh) throws LimiteReservaExcedidoException {
-        // Límite de reserva física absoluta (-5000 kWh)
+       
         if (this.nivelEnergia - kwh < -5000) {
             throw new LimiteReservaExcedidoException(
                 "Operación rechazada para " + id + ". Excede el límite de reserva permitido (-5000 kWh)."

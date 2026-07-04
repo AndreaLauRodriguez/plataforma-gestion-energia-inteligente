@@ -34,7 +34,7 @@ public class Rutina implements Operacion {
 
     @Override
     public void deshacer() {
-        // Deshace la rutina completa en orden cronológico inverso
+      
         for (int i = operaciones.size() - 1; i >= 0; i--) {
             operaciones.get(i).deshacer();
         }
